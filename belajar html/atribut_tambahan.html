@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artribut tambahan</title>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <div>
+            <!--autofocus	Membuat inputan otomatis menjadi fokus.-->
+          <input type="text" value="Ini akan otomatis fokus" autofocus="autofocus" size="25">
+        </div>
+        <br>
+        <div>
+            <!--readonly	Berfungsi untuk membuat inputan hanya bisa di baca (tidak bisa di isi)-->
+          <input type="text" value="Atribut readonly" readonly="readonly">
+        </div>
+        <br>
+        <div>
+            <!--disabled	Sama seperti atribut readonly, hanya saja jika kursor diarahkan keinputnya maka akan dirubah menjadi kursor not allowed.-->
+          <input type="text" value="Atribut disabled" disabled="disabled">
+        </div>
+        <br>
+        <div>
+            <!--required	Berfungsi untuk membuat inputan tidak boleh kosong (harus diisi).-->
+          Nomor (5-15) (Harus di isi): <input type="number" min="5" max="15" required="required">
+        </div>
+        <br>
+        <div>
+            <!--placeholder	Memberikan tulisan pada inputan yang kosong dan tidak sedang fokus, jika inputan fokus/diisi maka isi dari atribut placeholder tidak ditampilkan.-->
+          <input type="text" placeholder="Minimal 1 karakter, maksimal 10 karakter, harus di isi" minlength="5" maxlength="10" required="required" size="50">
+        </div>
+        <br>
+        <div>
+          <input type="submit" name="proses" value="Proses">
+        </div>
+      </form>
+</body>
+</html>

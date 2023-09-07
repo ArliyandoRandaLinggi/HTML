@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optgroup</title>
+</head>
+<body>
+    <form action="proses.php" method="post" onsubmit="alert('ini sekedar tampilan saja');return false;">
+    <div>
+
+        <!--Tag <optgroup></optgroup> berguna untuk mengelompokkan tag <option></option> (mengelompokkan menu) pada tag <select></select>.-->
+        <label for="bahasa">Bahasa yang kamu sukai :</label>
+        <select name="bahasa" id="bahasa">
+            <optgroup label="Eropa">
+                <option value="Inggris">Inggris</option>
+                <option value="Jerman">Jerman</option>
+                <option value="Belanda">Belanda</option>
+            </optgroup>
+
+
+            <!--Atribut label pada tag <optgroup></optgroup> berguna untuk mendefinisikan judul group (kelompok) nya.-->
+            <optgroup label="Asia">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Jepang">Jepang</option>
+                <option value="Korea">Korea</option>
+            </optgroup>
+        </select>
+        <input type="submit" name="kirim" value="kirim">
+    </div>
+    </form>
+</body>
+</html>

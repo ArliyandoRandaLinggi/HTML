@@ -1,0 +1,69 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Form</title>
+        </head>
+        <body>
+            <h1>Form Login </h1>
+            <h2>Silahkan Lengkapi Data dibawah ini :</h2>
+            <table border="0">
+            <form>
+            <!--input, textarea, select, button, label-->
+            <!-- input type = text, password, radio, checkbox, submit, reset, button-->
+                <tr>
+        <td><label for="username">username </label></td>
+        <td><input type="text" name="username" id="username"></td>
+        </tr>
+        <br>
+        <tr></tr>
+        <td><label for="password">password </label></td>
+        <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <br>
+        <tr>
+            <td colspan="2" align="center">
+        <input type="radio" name="jenis_kelamin" id="pria"><label for="pria">pria</label>
+        <input type="radio" name="jenis_kelamin" id="perempuan"><label for="perempuan">perempuan</label>
+            </td>
+        </tr>    
+        <br>
+        <tr>
+            
+            <td colspan="2" align="right">
+            <input type="checkbox" id="maingame"><label for="maingame">main game</label>
+            <input type="checkbox" id="belajar"><label for="belajar">belajar</label>
+            <input type="checkbox" id="sepeda"><label for="sepeda">sepeda</label>
+            </td>
+            <br>
+            </tr>
+            <tr>
+                <td>komentar </td>
+                <td>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>tempat tinggal </td>
+                <td>
+            <select>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+            </select>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+            <button type="reset">kembali</button>
+            <button type="submit">Kirim</button>
+                </td>
+            <tr></tr>
+        </form>
+    </tr>
+    </table>    
+    </body>
+    </html>

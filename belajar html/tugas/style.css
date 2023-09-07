@@ -1,0 +1,16 @@
+/* style.css */
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%; /* Atur lebar sidebar sesuai kebutuhan Anda */
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}

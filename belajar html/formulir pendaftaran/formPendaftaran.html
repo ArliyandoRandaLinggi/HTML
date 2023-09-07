@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Formulir Pendaftaran</h1>
+        <div class="textbox">
+           <br><label for="nama">Nama</b></label>
+            <input type="text" id="nama" placeholder="Masukkan nama">
+            <br><br></b><label for="Umur">Umur</label>
+            <input type="number" id="Umur" placeholder="Masukkan umur">
+            <br><br><label for="Alamat">Alamat</label>
+            <textarea name="Alamat" id="Alamat" cols="" rows="" placeholder="Masukkan alamat"></textarea>
+            <br><br><label for="nomor">No.Hp</label>
+            <input type="number" id="nomor" placeholder="Masukkan nomor">
+            
+            <!--Radio button-->
+            <br><br>Waktu
+            <label for="Pagi"><input type="radio" name="Waktu" id="Pagi">Pagi</label>
+            <label for="Siang"><input type="radio" name="Waktu" id="Siang">Siang</label>
+            <label for="Malam"><input type="radio" name="Waktu" id="Malam">Malam</label>
+            
+            <br><br><label for="dokter">Dokter</label>
+            <select name="dokter" id="dokter">
+               <optgroup label="Bedah Spesialist">Bedah Spesialist
+                <option value="Rangga">Dr.Rangga</option>
+                <option value="Anggi">Drs.Anggi</option>
+                <option value="Hana">Drs.Hanna</option>
+               </optgroup>
+               <optgroup label="Bedah Gigi">Bedah Gigi
+                <option value="Dr.Ahmad">Dr.Ahmad</option>
+                <option value="Dr.Andi">Dr.Andi</option>
+                <option value="Drs.Hani">Drs.Hani</option>
+               </optgroup>
+            </select>
+            <br><br>
+            <button type="submit" class="btn" value="Daftar"> Daftar</button>
+            <button type="reset" class="btn"value="Batal">Batal</button>
+        </div>
+    </div>
+</body>
+</html>

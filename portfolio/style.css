@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.animated-word{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.letter{
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    color: #fff;
+}
+
+.letter:hover{
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(0, 93%, 50%), hsl(248, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

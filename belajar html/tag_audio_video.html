@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Audio dan Video</title>
+</head>
+<body>
+    <div>
+        <!--Berikut adalah atribut-atribut pada tag audio:
+
+Atribut     :	Deskripsi kegunaan
+autoplay    :	Menentukan bahwa audio akan mulai berputar otomatis.
+controls    :  	Supaya audio bisa di kontrol (di play, pause dan menaik atau menurunkan volume).
+loop	    :   Menentukan bahwa audio akan berputar kembali meski audio sudah habis.
+src         :	Menentukan alamat URL. dari mana sumber audionya (kegunaannya sama seperti pada tag <img>).
+        -->
+
+        <audio controls>
+            <source src="[Zetsuen_No_Tempest_OST_Ending_2]_Tomohisa_Sako_-_Bokutachi_no_Uta_(Lyric).mp3" type="audio/mp3">
+        </audio>
+        <audio controls>
+            <!-- Menampilkan file audio berformat .ogg -->
+            <source src="lemon.ogg" type="audio/ogg">
+            <!-- Jika file audio berformat .ogg tidak didukung oleh browser, maka menampilkan file audio berformat .mp3 -->
+            <source src="03. Paper Flower.mp3" type="audio/mp3">
+            <!-- Jika kedua format di atas tidak didukung oleh browser maka audio tidak akan dimunculkan -->
+            Browser anda tidak mendukung element audio.
+          </audio>
+    </div>
+
+    <div>
+        <!--Berikut adalah atribut-atribut pada tag video:
+
+Atribut     :Deskripsi kegunaan
+autoplay    :Menentukan bahwa video akan mulai berputar otomatis.
+controls    :Supaya video bisa di kontrol (di play, pause, menaik atau menurunkan volume dan bisa menampilkan dengan tampilan layar penuh).
+loop        :Menentukan bahwa video akan berputar kembali meski audio sudah habis.
+src         :Menentukan alamat URL. Dari mana sumber videonya (kegunaannya sama seperti pada tag <img>).
+width	    :Mengatur lebar video.
+height	    :Mengatur tinggi video.
+poster	    :Menentukan gambar yang akan tampil ketika video belum berputar (thumbnail).
+muted	    :Menentukan bahwa output suara akan di mute/dihilangkan poster.
+        -->
+        
+        <video width="80%" height="600" controls>
+            <source src="NKRI.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div>
+        <video width="85%" height="900" controls>
+            <!-- Menampilkan file video berformat .mp4 -->
+            <source src="Ideologi Pancasila_video.mp4" type="video/mp4">
+            <!-- Jika file video berformat .mp4 tidak didukung oleh browser, maka menampilkan file video berformat .ogg -->
+            <source src="ideologi Pancasila_video.ogg" type="video/ogg">
+            <!-- Jika file video berformat .ogg tidak didukung oleh browser, maka menampilkan file video berformat .webm -->
+            <source src="ideologi Pancasila_video.webm" type="video/webm">
+            <!-- Jika ketiga format di atas tidak didukung oleh browser maka video tidak akan dimunculkan -->
+            Browser anda tidak mendukung element video.
+          </video>
+    </div>
+</body>
+</html>

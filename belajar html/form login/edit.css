@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url(sao.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 270px;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.login-box h1{
+    color: white;
+    text-align: center;
+}
+
+.login-box .textbox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 3px whitesmoke;
+    padding: 5px 0;
+}
+
+.login-box input{
+    width: 100%;
+    padding: 0 5px;
+    border: none;
+    color: rgb(224, 7, 7);
+    font-size: 15px;
+}
+
+.login-box input::placeholder{
+    color:black;
+}
+
+.btn{
+    border: 1px solid whitesmoke;
+    width: 100%;
+    background: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgba(228, 226, 237, 0.8);
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom a{
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}

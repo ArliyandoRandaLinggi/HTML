@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body>
+    <h1 class="cointainer-h1">Formulir Daftar</h1>
+    <h3 class="container-h3">Silahkan Isi Formulir dibawah ini </h3>
+    <div class="container">
+        <form action="proses.php" method="post"></form>
+        <label for="nama">Nama Lengkap :</label>
+        <input type="text" name="nama" id="nama" placeholder="masukkan nama anda"required>
+    </div>
+    <div class="container_2">
+        <br>Jenis Kelamin :
+        <label for="Laki-laki"><input type="radio" name="Jenis_kelamin" id="Laki-laki" value="Laki-laki">Laki-laki</label>
+        <label for="Perempuan"><input type="radio" name="Jenis_kelamin" id="Perempuan" value="Perempuan">Perempuan</label>
+    </div>
+    <div class="container_1">
+        <br><label for="angka">Usia Anda:
+            <input type="number" name="angka" id="angka"required>
+        </label>
+    </div>
+    <div class="container_3">
+        <br><label for="Dokter">Dokter tersedia :</label>
+        <select name="Dokter" id="Dokter">
+            <optgroup label="umum">
+                <option value="dr.andi">Dr.Andi</option>
+                <option value="dr.bagus">Dr.Bagus</option>
+                <option value="drs.hani">Drs.Hani</option>
+            </optgroup>
+            <optgroup label="gigi">\
+                <option value="dr.yani">Dr.Yani</option>
+                <option value="drs.yuli">Drs.Yuli</option>
+                <option value="dr.dzaky">Dr.Dzaky</option>
+            </optgroup>
+            <optgroup label="bedah">
+                <option value="dr.anto">Dr.Anto</option>
+                <option value="drs.nisa">Drs.Nisa</option>
+                <option value="drs.zahra">Drs.Zahra</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="container_4">
+    <br><input type="submit" value="Daftar">
+    <input type="reset" value="Kembali">
+    </div>
+</body>
+</html>

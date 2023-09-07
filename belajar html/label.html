@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+</head>
+<body>
+    <div>
+        <form action="proses.php" method="post" onsubmit="alert('maaf ini hanya sekedar tampilan saja,tidak untuk di proses'); return false;">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda">
+
+        <br>pilih jenis kelamin anda:
+        <input id="Laki-laki" type="radio" name="Jenis_kelamin" value="Laki-laki"> <label for="Laki-laki"> Laki-laki</label>
+        <input id="Perempuan" type="radio" name="Jenis_kelamin" value="Perempuan"> <label for="Perempuan"> Perempuan</label>
+        </div>
+    <div>
+        <br>Pilih jenjang pendidikan anda:
+        <input id="SD" type="radio" name="pendidikan" value="SD"> <label for="SD">SD</label>
+        <input id="SMP" type="radio" name="pendidikan" value="SMP"> <label for="SMP">SMP</label>
+        <input type="radio" name="pendidikan" id="SMA" value="SMA"> <label for="SMA">SMA</label>
+        <input type="radio" name="pendidikan" id="KULIAH" value="KULIAH"> <label for="KULIAH">KULIAH</label>
+    </div>
+
+    <div>
+        <br>Pilih hobi anda:
+        <input id="Bola" type="checkbox" name="hobi" value="Bola"> <label for="Bola">Bola</label>
+        <input id="Futsal" type="checkbox" name="hobi" value="Futsal"> <label for="Futsal">Futsal</label>
+       <input type="checkbox" name="hobi" id="Badminton" value="Badminton"> <label for="Badminton">Badminton</label>
+        <input type="checkbox" name="hobi" id="Renang" value="Renang"> <label for="Renang">Renang</label>
+    </div>
+
+    <input type="submit" name="kirim" value="proses">
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Masuk</title>
+</head>
+<body>
+    <h1>Daftar Masuk Mahasiswa</h1>
+    <h2>Silahkan isi kolom dibawah ini</h2>
+    <form action="daftar_masuk" method="post" onsubmit="alert('maaf ini hanya tampilan saja, tidak bisa diakses');return;false;">
+    <table border="2" cellpading="5">
+        <tr>
+            <td>Nama Lengkap</td>
+            <td>
+                <input type="text" name="name_lengkap" placeholder="Masukkan Nama Lengkap" required>
+            </td>
+        </tr>
+        <tr>
+        <td> Umur</td>
+        <td>
+            <input type="number" name="umur" placeholder="Masukkan umur" required>
+        </td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>
+                <input type="text" name="Alamat" placeholder="Masukkan Alamat"required>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="email" name="email" placeholder="Masukkan Email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+            <td>
+                <input type="text" name="Jurusan" placeholder="Masukkan Nama Jurusan"required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <input type="submit" name="kirim" value="Daftar">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

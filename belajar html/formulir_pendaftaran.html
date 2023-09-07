@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir pendaftaran anggota</title>
+</head>
+<body>
+    <h1>Formulir pendaftaran anggota</h1>
+    <h2>Silahkan isi dengan benar</h2>
+    <form action="daftar_anggota" method="post" onsubmit="alert ('ini hanya contoh tampilan tidak bisa diakses'); return false;"
+    >
+    <table border="1" cellpadding="5">
+        <tr>
+            <td>Nama Pengguna</td>
+            <td>
+                <input type="text" name="name_pengguna">
+            </td>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>
+                    <input type="text" name="nama_lengkap">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Kata sandi</td>
+                <td>
+                    <input type="password" name="kata_sandi">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" name="kirim" value="Daftar">
+                </td>
+            </tr>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
